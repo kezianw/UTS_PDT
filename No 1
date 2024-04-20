@@ -23,3 +23,12 @@ axes[0, 0].bar(['Jumlah Data'], [jumlah_data])
 rataan_data.plot(kind='bar', ax=aces[1, 0], rot=0}
 axes[0, 1].set_title('Rataan Data')
 
+median_data.plot(kind='bar', ac=axes[1,0], rot=0)
+axes[1,0].set_title('Median Data')
+
+mean_data.plot(kind='bar', ax=axes[1,1], rot=0)
+axes[1,1].set_title('Mean Data')
+
+plt.tight_layout()
+
+plt.show()
