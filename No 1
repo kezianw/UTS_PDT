@@ -17,3 +17,9 @@ print("Rataan data:\n",rataan_data)
 print("Median data:\n",median_data)
 print("Mean data:",mean_data)
 
+
+fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(12,8))
+axes[0, 0].bar(['Jumlah Data'], [jumlah_data])
+rataan_data.plot(kind='bar', ax=aces[1, 0], rot=0}
+axes[0, 1].set_title('Rataan Data')
+
