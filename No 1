@@ -6,3 +6,14 @@ url = "https://raw.githubusercontent.com/kezianw/UTS_PDT/main/archive%20(4)/medi
 data = pd.read_csv(url)
 
 data = data.drop(['sex', 'smoker', 'region'], axis = 1)
+
+jumlah_data = len(data)
+rataan_data = data.mean()
+median_data = data.median()
+mean_data = data.mean()
+
+print("Jumlah data:", jumlah_data)
+print("Rataan data:\n",rataan_data)
+print("Median data:\n",median_data)
+print("Mean data:",mean_data)
+
