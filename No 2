@@ -14,3 +14,25 @@ print(kosong)
 
 print("\n Bangku Bus yang Sudah Teirisi:")
 print(terisi)
+
+count_kosong = (data['Keterangan"] == 'empty').sum()
+count_terisi = (data['Keterangan'] == 'filled').sum()
+
+plt.figure(figsize=(12,5))
+
+plt.subplot(1, 2, 1)
+seating_arrangement = [
+['T', 'K', 'T', 'T'],
+['T', 'T', 'T', 'T'],
+['T', 'T', 'T', 'T'],
+['T', 'T', 'T', 'T'],
+['T', 'T', 'T', 'T'],
+['T', 'T', 'T', 'T'],
+['T', 'T', 'T', 'T'],
+['T', 'T', 'T', 'T'],
+['T', 'T', 'T', 'T'],
+['T', 'T', 'T', 'T'],
+['T', 'T', 'T', 'T'],
+['T', 'K', 'K', 'K'],
+['K', 'K', 'K', 'K']
+]
