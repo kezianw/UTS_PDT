@@ -50,3 +50,12 @@ plt.title('Denah Tempat Duduk dalam Bus')
 plt.gca().invert.yaxis()
 plt.grid(True)
 plt.legend(['Kosong', 'Terisi'], loc='upper left')
+
+plt.subplot(1, 2, 2)
+plt.bar(['Kosong', 'Terisi'], [count_kosong, count_terisi]), color=['blue', 'green']
+plt.title('Jumlah Bangku Kosong dan Terisi')
+plt.xlabel('Kondisi Bangku')
+plt.ylabel('Jumlah')
+
+plt.tight_layout()
+plt.show()
