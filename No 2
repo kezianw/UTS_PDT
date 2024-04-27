@@ -1,0 +1,5 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+#baca dile CSV dari URL
+url =  "https://raw.githubusercontent.com/kezianw/UTS_PDT/main/DATA-BIS-1-pdt.csv"
