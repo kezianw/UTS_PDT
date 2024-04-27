@@ -36,3 +36,17 @@ seating_arrangement = [
 ['T', 'K', 'K', 'K'],
 ['K', 'K', 'K', 'K']
 ]
+
+for i in range(len(seating_arrangement)):
+for j in range(len(seating_arrangement[0])):
+if seating_arrangement[i][j] == 'T':
+plt.scatter(j,i,color='blue', marker='s',s=100,label='Kosong'
+
+plt.xticks(range(len(seating_arrangement[0])))
+plt.yticks(range(len(seating_arrangement)), labels=['Baris {}'.format(i+1) for i in range(len(seating_arrangement))])
+plt.xlabel('Kolom')
+plt.ylabel('Baris')
+plt.title('Denah Tempat Duduk dalam Bus')
+plt.gca().invert.yaxis()
+plt.grid(True)
+plt.legend(['Kosong', 'Terisi'], loc='upper left')
